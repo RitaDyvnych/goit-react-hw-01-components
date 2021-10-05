@@ -28,7 +28,7 @@ export default function Statistics({ statisticalData }) {
 }
 
 Statistics.propTypes = {
-  statData: PropTypes.arrayOf(
+  statisticalData: PropTypes.arrayOf(
     PropTypes.shape({
       percentage: PropTypes.number.isRequired,
       label: PropTypes.string.isRequired,
