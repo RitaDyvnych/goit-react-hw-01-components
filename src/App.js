@@ -17,7 +17,7 @@ function App() {
         />
       </div>
       <div className="App">
-        <Statistics title="Upload stats" statisticalData={statisticalData} />;
+        <Statistics title="Upload stats" statisticalData={statisticalData} />
       </div>
     </>
   );
