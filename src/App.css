@@ -23,3 +23,8 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+.App {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

@@ -1,6 +1,8 @@
 import "./App.css";
 import user from "./data/user.json";
 import User from "./components/User";
+import statisticalData from "./data/statistical-data.json";
+import Statistics from "./components/Statistics";
 
 function App() {
   return (
@@ -13,6 +15,9 @@ function App() {
           avatar={user.avatar}
           stats={user.stats}
         />
+      </div>
+      <div className="App">
+        <Statistics title="Upload stats" statisticalData={statisticalData} />;
       </div>
     </>
   );
