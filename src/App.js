@@ -1,10 +1,20 @@
-import './App.css';
+import "./App.css";
+import user from "./data/user.json";
+import User from "./components/User";
 
 function App() {
   return (
-    <div className="App">
-      test
-    </div>
+    <>
+      <div className="App">
+        <User
+          name={user.name}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />
+      </div>
+    </>
   );
 }
 
