@@ -3,10 +3,10 @@ import FriendListItem from "./FriendListItem";
 
 export default function FriendList({ friends }) {
   return (
-    <>
-      <ul className={style.friendList}>
-        <FriendListItem friends={friends} />
-      </ul>
-    </>
+    <ul className={style.friendList}>
+      {friends.map((el) => (
+        <FriendListItem el={el} />
+      ))}
+    </ul>
   );
 }
